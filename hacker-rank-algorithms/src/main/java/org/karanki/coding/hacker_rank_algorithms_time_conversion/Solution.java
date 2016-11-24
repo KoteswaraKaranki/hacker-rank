@@ -21,12 +21,27 @@ public class Solution {
 		boolean am = time.substring(8).equalsIgnoreCase("AM");
 		int hh = Integer.valueOf(time.substring(0, 2));		
 		
+		//https://en.wikipedia.org/wiki/12-hour_clock
+		
+		//AM cases
+		// 12:00AM (Midnight) => 	00:00
+		// 12:01AM 	=> 	00:01
+		// 12:59AM 	=> 	00:59
+		// 01:00AM	=>	01:00
+		
+		//PM cases
+		// 12:00PM (Noon)	=>	12:00
+		// 12:01PM	=>	12:01
+		// 12:59PM	=>	12:59
+		// 01:00PM	=>	13:00
+				
+		
 		int newHour = hh;
 
 		if (am && hh == 12) {
 			newHour = 0;
 		} else if (!am && hh != 12) {
-			newHour = hh + 12;
+			newHour += 12;
 		}
 		
 		
