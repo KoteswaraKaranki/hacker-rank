@@ -27,7 +27,7 @@ public class Solution {
             a[a_i] = in.nextInt();
         }
         
-        int moduloK = k % n; //more than n times, k would be back to modulo of N it self
+        int moduloK = k % n; //if more than n times, k would be back to modulo of n it self
         for(int a0 = 0; a0 < q; a0++){
             
         	int m = in.nextInt();            
