@@ -5,5 +5,5 @@
     <artifactId>hacker-rank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>hacker-rank-data-strcutures</artifactId>
+  <artifactId>hacker-rank-data-structures</artifactId>
 </project>
