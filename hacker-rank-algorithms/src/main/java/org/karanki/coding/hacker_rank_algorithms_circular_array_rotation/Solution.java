@@ -27,16 +27,17 @@ public class Solution {
             a[a_i] = in.nextInt();
         }
         
-        int moduloK = k % n; 
+        int moduloK = k % n; //more than n times, k would be back to modulo of N it self
         for(int a0 = 0; a0 < q; a0++){
             
         	int m = in.nextInt();            
             
+        	//pick up m - k index, if K <= M
             if(moduloK <= m)
             {
             	System.out.println(a[m - moduloK]);
             }
-            else
+            else //pick up m - k + n, if K > M
             {
             	System.out.println(a[m - moduloK + n]);
             }

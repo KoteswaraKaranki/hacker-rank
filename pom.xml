@@ -6,6 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>hacker-rank-algorithms</module>
-  	<module>hacker-rank-data-strcutures</module>
+  	<module>hacker-rank-data-structures</module>
   </modules>
 </project>
